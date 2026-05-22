@@ -244,7 +244,7 @@ function EonrizeForge() {
           <div style={{
             marginTop: 80, display: 'flex', justifyContent: 'center', gap: 64, flexWrap: 'wrap',
           }}>
-            {[['10K+', 'Members'], ['500+', 'Resources'], ['4.9★', 'Rating']].map(([num, label]) => (
+            {[['10+', 'Projects'], ['100+', 'Resources']].map(([num, label]) => (
               <div key={label} style={{ textAlign: 'center' }}>
                 <div className="gradient-text" style={{ fontSize: 32, fontWeight: 800 }}>{num}</div>
                 <div style={{ color: 'var(--text-secondary)', fontSize: 13, fontWeight: 500, marginTop: 4 }}>{label}</div>
@@ -332,9 +332,9 @@ function EonrizeForge() {
                 icon: <IconSmartphone />,
                 color: '#a78bfa',
                 glow: 'rgba(167,139,250,0.3)',
-                title: 'Future Apps',
-                subtitle: 'GrindOn & More',
-                desc: 'Our upcoming app ecosystem—starting with GrindOn, a habit and accountability platform designed to make discipline your default mode.',
+                title: 'GrindOn App',
+                subtitle: 'Habit & Accountability',
+                desc: 'Our upcoming flagship habit and accountability platform designed to make discipline your default mode. Built for daily grinding, it helps users track their status across activities like studying, gym, and work. Because motivation fades quickly, GrindOn appreciates users through supportive voice notes to keep them driven and locked in. Coming soon to the Google Play Store worldwide.',
               },
               {
                 icon: <IconUsers />,
@@ -638,10 +638,10 @@ function EonrizeForge() {
             <div>
               <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 20, letterSpacing: 0.5 }}>Contact</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-                <a href="mailto:hello@eonrizeforge.com" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: 14, transition: 'color 0.2s' }}
+                <a href="mailto:admin@eonrizeforge.com" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: 14, transition: 'color 0.2s' }}
                 onMouseEnter={e => (e.currentTarget.style.color = '#06b6d4')}
                 onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
-                >hello@eonrizeforge.com</a>
+                >admin@eonrizeforge.com</a>
                 <span style={{ color: 'var(--text-secondary)', fontSize: 14 }}>Available Mon–Fri</span>
                 <a href="#join" style={{ color: '#8b5cf6', textDecoration: 'none', fontSize: 14, fontWeight: 600 }}>Join the community →</a>
               </div>
