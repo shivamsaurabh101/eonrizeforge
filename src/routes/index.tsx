@@ -653,11 +653,14 @@ function EonrizeForge() {
               © 2026 Eonrize Forge. All rights reserved.
             </div>
             <div style={{ display: 'flex', gap: 24 }}>
-              {['Privacy Policy', 'Terms of Service'].map(item => (
-                <a key={item} href="#" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: 13, transition: 'color 0.2s' }}
+              {[
+                { label: 'Privacy Policy', href: '/grindon/privacy-policy' },
+                { label: 'Terms of Service', href: '#' },
+              ].map(({ label, href }) => (
+                <a key={label} href={href} style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: 13, transition: 'color 0.2s' }}
                 onMouseEnter={e => (e.currentTarget.style.color = '#8b5cf6')}
                 onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
-                >{item}</a>
+                >{label}</a>
               ))}
             </div>
           </div>
