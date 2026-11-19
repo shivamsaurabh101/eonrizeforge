@@ -6,8 +6,11 @@ export const Route = createRootRoute({
     meta: [
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'Eonrize Forge — Forge Your Future' },
-      { name: 'description', content: 'Build discipline, create income, and become unstoppable with Eonrize Forge.' },
+      { title: 'EonRize Forge — Technology & Creative Development Studio' },
+      {
+        name: 'description',
+        content: 'Technology and creative development for custom software, AI applications, games and 3D worlds.',
+      },
     ],
   }),
   shellComponent: RootDocument,
@@ -16,9 +19,7 @@ export const Route = createRootRoute({
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
+      <head><HeadContent /></head>
       <body>
         {children}
         <Scripts />
@@ -26,3 +27,4 @@ function RootDocument({ children }: { children: React.ReactNode }) {
     </html>
   )
 }
+
